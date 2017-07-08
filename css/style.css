@@ -6,6 +6,7 @@ body{
     font-family: 'Roboto Slab', serif;
     color: #777;
 }
+
 a.btn-blue, .btn-blue {
     background-color: aqua;
     border: 1px solid aqua;
@@ -20,12 +21,13 @@ a.btn-blue:hover, .btn-blue:hover {
     background-color: black;
     border: 1px solid aqua;
 }
-/*Main menu Styles Start*/
+/*Main navigation menu Styles Start*/
 
 #main-nav{
     background-color: transparent;
     border: 0;
 }
+
 #main-nav a.navbar-brand {
     font-size: 2em;
     font-family: "Droid Serif", "sans-serif";
@@ -43,10 +45,73 @@ a.btn-blue:hover, .btn-blue:hover {
     position: absolute;
     
 }
-/*Main menu Styles Stop*/
+
+#main-nav.scroll {
+    background-color: rgba(14,216,214,085);
+}
+/*Main navigation menu Styles Stop*/
 
 /*Main header styles start*/
 #main-header {
     height: 100vh;
-    background-image: linear-gradient(to bottom 0,0,0,0)
-}
+    background-image: linear-gradient(to bottom 0,0,;
+        
+        /*Section services styles - start*/
+        
+        #services .fa {
+            font-size: 3em;
+            height: 80px;
+            width: 80px;
+            line-height: 80px;
+            border: 1px solid aqua;
+            border-radius: 50%;
+            color: black;
+            background-color: aqua;
+            transition: all .3s;
+            
+    }
+    #services .fa:hover {
+        color: aqua;
+        background-color: black;
+        transform: rotate(360deg);
+    }
+    /* Section Services Styles - STOP */
+    
+    
+    /* Sectiion portfolio styles start */
+    
+    #portfolio {
+        background-color: black;
+    }
+    
+    #portfolio .single-portfolio-itm {
+        background-color: black;
+        margin-bottom: 20px;
+    }
+    
+    #portfolio .portfolio-image-container{
+        height: 300px;
+        overflow: hidden;
+    }
+    #portfolio .single-portfolio-item .portfolio-image {
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        position: relative;
+        transition: .3s;
+    }
+    
+    #portfolio .single-portfolio-item .portfolio-image .portfolio-image-mask:hover {
+        transform:scale(1.2);
+    }
+    #portfolio .single-portfolio-item .portfolio-image .portfolio-image-mask {
+        background-color: aqua;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    
+     /* Sectiion portfolio styles stop */
